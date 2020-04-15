@@ -13,6 +13,15 @@
 		FADD78F92445CC7C00285D43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADD78F72445CC7C00285D43 /* Main.storyboard */; };
 		FADD78FB2445CC8300285D43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADD78FA2445CC8300285D43 /* Assets.xcassets */; };
 		FADD78FE2445CC8300285D43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADD78FC2445CC8300285D43 /* LaunchScreen.storyboard */; };
+		FADD79082445CD1300285D43 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD79072445CD1300285D43 /* TableViewController.swift */; };
+		FADD790F2445DCD100285D43 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD790E2445DCD000285D43 /* TableViewCell.swift */; };
+		FADD79112445E83600285D43 /* MainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD79102445E83600285D43 /* MainData.swift */; };
+		FADD79132445EE3600285D43 /* MainObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD79122445EE3600285D43 /* MainObject.swift */; };
+		FADD79172445F0F400285D43 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD79162445F0F400285D43 /* Constraints.swift */; };
+		FADD79192445FBC700285D43 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD79182445FBC700285D43 /* Utilities.swift */; };
+		FADD791B2445FD2800285D43 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD791A2445FD2800285D43 /* UIColor.swift */; };
+		FADD791E244616F500285D43 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD791D244616F500285D43 /* Profile.swift */; };
+		FADD79202446175B00285D43 /* ViewGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD791F2446175B00285D43 /* ViewGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		FADD78FA2445CC8300285D43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FADD78FD2445CC8300285D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FADD78FF2445CC8300285D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADD79072445CD1300285D43 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FADD790E2445DCD000285D43 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FADD79102445E83600285D43 /* MainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainData.swift; sourceTree = "<group>"; };
+		FADD79122445EE3600285D43 /* MainObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainObject.swift; sourceTree = "<group>"; };
+		FADD79162445F0F400285D43 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		FADD79182445FBC700285D43 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		FADD791A2445FD2800285D43 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		FADD791D244616F500285D43 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		FADD791F2446175B00285D43 /* ViewGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,104 @@
 		FADD78F02445CC7C00285D43 /* DicodingPemula */ = {
 			isa = PBXGroup;
 			children = (
+				FADD79142445F0D800285D43 /* Extension */,
+				FADD790B2445CD4600285D43 /* Model */,
+				FADD790A2445CD4100285D43 /* Cell */,
+				FADD79092445CD3300285D43 /* Controller */,
 				FADD78F12445CC7C00285D43 /* AppDelegate.swift */,
 				FADD78F32445CC7C00285D43 /* SceneDelegate.swift */,
-				FADD78F52445CC7C00285D43 /* ViewController.swift */,
 				FADD78F72445CC7C00285D43 /* Main.storyboard */,
 				FADD78FA2445CC8300285D43 /* Assets.xcassets */,
 				FADD78FC2445CC8300285D43 /* LaunchScreen.storyboard */,
 				FADD78FF2445CC8300285D43 /* Info.plist */,
 			);
 			path = DicodingPemula;
+			sourceTree = "<group>";
+		};
+		FADD79052445CCBD00285D43 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				FADD79072445CD1300285D43 /* TableViewController.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		FADD79062445CCC900285D43 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				FADD78F52445CC7C00285D43 /* ViewController.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		FADD79092445CD3300285D43 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FADD791C244616E100285D43 /* Profile */,
+				FADD79062445CCC900285D43 /* DetailView */,
+				FADD79052445CCBD00285D43 /* MainView */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FADD790A2445CD4100285D43 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FADD790D2445DCAF00285D43 /* DetailView */,
+				FADD790C2445DCA600285D43 /* MainView */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FADD790B2445CD4600285D43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FADD79102445E83600285D43 /* MainData.swift */,
+				FADD79122445EE3600285D43 /* MainObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FADD790C2445DCA600285D43 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				FADD790E2445DCD000285D43 /* TableViewCell.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		FADD790D2445DCAF00285D43 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		FADD79142445F0D800285D43 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FADD79152445F0E300285D43 /* UIKit */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FADD79152445F0E300285D43 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FADD79162445F0F400285D43 /* Constraints.swift */,
+				FADD79182445FBC700285D43 /* Utilities.swift */,
+				FADD791A2445FD2800285D43 /* UIColor.swift */,
+				FADD791F2446175B00285D43 /* ViewGroup.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		FADD791C244616E100285D43 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FADD791D244616F500285D43 /* Profile.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +245,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADD790F2445DCD100285D43 /* TableViewCell.swift in Sources */,
 				FADD78F62445CC7C00285D43 /* ViewController.swift in Sources */,
 				FADD78F22445CC7C00285D43 /* AppDelegate.swift in Sources */,
+				FADD79132445EE3600285D43 /* MainObject.swift in Sources */,
+				FADD79172445F0F400285D43 /* Constraints.swift in Sources */,
 				FADD78F42445CC7C00285D43 /* SceneDelegate.swift in Sources */,
+				FADD79202446175B00285D43 /* ViewGroup.swift in Sources */,
+				FADD79192445FBC700285D43 /* Utilities.swift in Sources */,
+				FADD79112445E83600285D43 /* MainData.swift in Sources */,
+				FADD791E244616F500285D43 /* Profile.swift in Sources */,
+				FADD79082445CD1300285D43 /* TableViewController.swift in Sources */,
+				FADD791B2445FD2800285D43 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
